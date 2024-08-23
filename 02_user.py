@@ -10,5 +10,5 @@ uložte tyto informace do souboru
 jmeno = input('Zadej jmeno: ')
 vek = input('Zadej vek: ')
 
-with open("02_user.txt", "a") as file:
+with open("02_user.txt", "+a") as file:
     file.write(jmeno + ", " + vek + "\n")
