@@ -25,23 +25,25 @@ jinak napište X je vysoká výška
 """
 
 data = [
-    8848, # Mount Everest
-    8611, # K2
-    4808, # Mont Blanc
-    5895, # Kilimanjaro
-    3776, # Mount Fuji
-    5642, # Elbrus
-    1603, # Sněžka
-    1492, # Praděd
-    1323, # Lysá hora
+    8848, 'Mount Everest',
+    8611, 'K2',
+    4808, 'Mont Blanc',
+    5895, 'Kilimanjaro',
+    3776, 'Mount Fuji',
+    5642, 'Elbrus',
+    1603, 'Sněžka',
+    1492, 'Praděd',
+    1323, 'Lysá hora'
 ]
 
-for i in data:
-    if i < 3000: 
-        print(i, 'Je nizka vyska')
+for i in range(0, len(data), 2):
+    vyska = data[i]
+    hora = data[i + 1]
+    if vyska < 3000: 
+        print(f'{vyska} {hora} je nizka vyska')
 
-    elif 3000 < i < 6000:
-        print(i, 'Je stredni vyska')
+    elif 3000 <= vyska < 6000:
+        print(f'{vyska} {hora} je stredni vyska')
 
     else:
-        print("Je vysoka vyska")
+        print(f'{vyska} {hora} je vysoka vyska')
