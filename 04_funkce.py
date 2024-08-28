@@ -24,7 +24,7 @@ obě funkce otestujte
 """
 import math
 
-print(math.pi)
+print(round(math.pi, 2))
 
 polomer = float(input('zadejte polomer: '))
 
@@ -36,9 +36,9 @@ def obsah_kruhu():
 
 def obvod_kruhu():
     O = 2 *  math.pi * polomer 
-    print(round(O, 2))
+    return round(O, 2)
     
 
 obsah_kruhu()
-obvod_kruhu()
+print(obvod_kruhu())
 
