@@ -1,0 +1,17 @@
+Tabulka clanek
+
+- id (pk, int)
+- nazev (varchar)
+- autor_id (int)
+
+
+Tabulka autor
+
+- autor_id (pk, int)
+- jmeno (varchar)
+- clanek_id (fk na clanek_id) 1:N
+
+zduvodneni:
+ - u autora chceme mit jeho jmeno a clanek ve vztahu 1:N 
+- clanek obsahuje nazev
+-  
